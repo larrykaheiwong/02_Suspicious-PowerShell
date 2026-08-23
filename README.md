@@ -1,4 +1,4 @@
-# 02_Suspicious-PowerShell# 03_PowerShell-Investigation
+# 02_Suspicious-PowerShell
 
 ## Objective
 
@@ -6,10 +6,10 @@ Investigate a suspicious PowerShell execution detected on a Windows endpoint usi
 
 ## Environment
 
-* Windows endpoint
-* Wazuh
-* Sysmon
-* Controlled lab environment
+- Windows endpoint
+- Wazuh
+- Sysmon
+- Controlled lab environment
 
 ## Scenario
 
@@ -23,22 +23,28 @@ The alert was reviewed to determine what PowerShell command was executed, which 
 2. Review the PowerShell command line
 3. Identify the user and endpoint
 4. Review the parent process
-5. Assess whether the activity is expected
+5. Assess whether the activity appears legitimate or suspicious
 6. Determine the appropriate L1 disposition
 7. Escalate to L2 if further investigation is required
 
 ## Key Evidence
 
-* Wazuh PowerShell alert
-* Sysmon Event ID 1 — Process Creation
-* PowerShell command line
-* User and endpoint information
-* Timestamp
+- Wazuh PowerShell alert
+- Sysmon Event ID 1 — Process Creation
+- PowerShell command line
+- User and endpoint information
+- Timestamp
 
-## Disposition
+## Outcome
 
-**Suspicious — Escalate to L2**
+- **Finding:** Suspicious PowerShell execution
+- **Disposition:** Escalated to L2
+- **Key evidence:** PowerShell execution with suspicious characteristics requiring further investigation
 
 ## Report
 
 [View the investigation report](investigation-report.md)
+
+## Medium Post
+
+[View the investigation in detail](https://medium.com/@larry.kaheiwong/investigating-a-suspicious-powershell-alert-with-wazuh-and-sysmon-53dbfe059402)
