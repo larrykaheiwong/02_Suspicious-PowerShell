@@ -1,5 +1,8 @@
 # 02_Suspicious-PowerShell
 
+## MITRE ATT&CK
+- T1059.001 - PowerShell
+
 ## Objective
 
 Investigate a suspicious PowerShell execution detected on a Windows endpoint using Wazuh and Sysmon.
